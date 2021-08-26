@@ -1,0 +1,48 @@
+.mtp__form {
+    padding: 20px;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    h3 {
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    input[type="text"] {
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+        resize: none;
+    }
+    input[type="submit"] {
+        margin: 20px 0 0 auto;
+    }
+    .mtp__msg {
+        width: 100%;
+        margin-top: 20px;
+        padding: 0;
+        display: inline-block;
+    }
+}
+
+.mtp__form--wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    > div {
+        width: 100%;
+    }
+}
+
+// Desktop
+@media(min-width: 767px) {
+    .mtp__form--wrapper {
+        flex-wrap: nowrap;
+        > div {
+            width: 49%;
+        }
+    }
+}
